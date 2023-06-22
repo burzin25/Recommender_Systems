@@ -14,3 +14,6 @@ Benefits: Exploring this repository offers insights and practical knowledge in r
 Audience: It serves as a valuable resource for developers and data scientists interested in building advanced recommendation systems.
 
 Cutting-edge techniques: The repository focuses on using state-of-the-art techniques to develop advanced recommendation systems.
+
+![image](https://github.com/burzin25/Recommender_Systems/assets/84149050/316f11e1-cca2-43b7-ae60-9155676e0c61)
+
