@@ -17,14 +17,53 @@ Cutting-edge techniques: The repository focuses on using state-of-the-art techni
 
 ![image](https://github.com/burzin25/Recommender_Systems/assets/84149050/316f11e1-cca2-43b7-ae60-9155676e0c61)
 
+# What Is Recommendation System?
+A recommendation system is a type of algorithm that predicts what rating or preference a user might have for an item. It's like a smart tool that suggests things you might like. For example, on Netflix, it helps you decide which movie to watch, on e-commerce websites it suggests products to buy, and on Kindle, it recommends books to read.
+
+# Content Based Filtering
+
+Tagging: Products/items are tagged using keywords or attributes that describe their content. For example, in a movie recommendation system, movies are associated with genres as tags.
+
+Initial Recommendations: When a new user, let's say User A, arrives, the system may recommend popular items or ask the user to fill out a form to gather some initial information.
+
+User Ratings: Over time, as User A interacts with the system, they may provide ratings to movies based on their preferences. For example, they might rate action movies highly and give poor ratings to anime movies.
+
+Content-based Recommendations: Using the information gathered, the system recommends items to User A based on their preferences and the content (tags) of the items. In this case, the system would recommend action movies to User A.
+
+Limitations: It's important to note that the system may not have a complete understanding of User A's preferences. For example, User A might have disliked a particular anime movie due to reasons like acting or story, rather than disliking the entire anime genre. The system needs more data to make accurate recommendations.
+
+Advantages of content-based filtering:
+
+Recommendations are specific to each user, as the model doesn't require data from other users.
+It can easily scale to a large number of users.
+The model can capture the specific interests of a user and recommend items that align with their unique preferences.
+Disadvantages of content-based filtering:
+
+Hand-engineering the feature representation of items requires domain knowledge.
+The model can only recommend items based on a user's existing interests and has limited ability to expand on their preferences or suggest entirely new items.
+
 # Collaborative Filtering
 
-Imagine you have a friend named User A, and there's another person named User B who has similar interests to User A. Now, let's say User B has found a really cool toy or book that they love. Collaborative filtering is a way to use this information to make recommendations.
+Collaborative filtering is a way to recommend new things to users based on the interests and preferences of other similar users. For example, when we shop on Amazon, it suggests new products by saying "Customers who bought this also bought...".
 
-So, if User A and User B have similar tastes, collaborative filtering can suggest that User A might also enjoy the same toy or book that User B likes. It's like saying, "Hey, User A, since you and User B have similar interests, maybe you'll like this thing that User B likes!"
+There are two types of collaborative filtering:
 
-One of the great things about collaborative filtering is that it can introduce you to new things that you might not have discovered otherwise. It's like finding a surprise recommendation that you end up really liking.
+User-Based Collaborative Filtering: This method looks at the ratings and preferences of similar users to make recommendations. If users A and C have similar tastes, and user A liked certain items, user C might be recommended those items too.
 
-Another cool thing is that collaborative filtering figures out these similarities automatically. It doesn't need someone to tell it which features or characteristics to look for. It learns on its own by observing the choices and preferences of different users.
+![image](https://github.com/burzin25/Recommender_Systems/assets/84149050/70939bf4-8750-4791-abc0-016a61f07317)
 
-In simple terms, collaborative filtering helps suggest things you might like based on what other people with similar interests enjoy. It's like having a friend who knows what you might love and recommends it to you!
+
+Item-Based Collaborative Filtering: This approach predicts ratings based on the user's own ratings on similar items. If children A and B both liked watermelon and grapes, and child C liked watermelon, they might be recommended grapes.
+
+![image](https://github.com/burzin25/Recommender_Systems/assets/84149050/570901cf-893f-490d-b5ee-5da7890de0fc)
+
+
+Advantages of collaborative filtering:
+
+It works well even with small amounts of data.
+It helps users discover new interests based on the preferences of similar users.
+It doesn't require domain knowledge about the items.
+Disadvantages of collaborative filtering:
+
+It cannot handle new items that have not been previously rated by users (known as the "Cold Start Problem").
+Side features like actor names or releasing years may not have much importance in the recommendations.
