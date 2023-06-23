@@ -17,3 +17,14 @@ Cutting-edge techniques: The repository focuses on using state-of-the-art techni
 
 ![image](https://github.com/burzin25/Recommender_Systems/assets/84149050/316f11e1-cca2-43b7-ae60-9155676e0c61)
 
+# Collaborative Filtering
+
+Imagine you have a friend named User A, and there's another person named User B who has similar interests to User A. Now, let's say User B has found a really cool toy or book that they love. Collaborative filtering is a way to use this information to make recommendations.
+
+So, if User A and User B have similar tastes, collaborative filtering can suggest that User A might also enjoy the same toy or book that User B likes. It's like saying, "Hey, User A, since you and User B have similar interests, maybe you'll like this thing that User B likes!"
+
+One of the great things about collaborative filtering is that it can introduce you to new things that you might not have discovered otherwise. It's like finding a surprise recommendation that you end up really liking.
+
+Another cool thing is that collaborative filtering figures out these similarities automatically. It doesn't need someone to tell it which features or characteristics to look for. It learns on its own by observing the choices and preferences of different users.
+
+In simple terms, collaborative filtering helps suggest things you might like based on what other people with similar interests enjoy. It's like having a friend who knows what you might love and recommends it to you!
