@@ -67,3 +67,13 @@ Disadvantages of collaborative filtering:
 
 It cannot handle new items that have not been previously rated by users (known as the "Cold Start Problem").
 Side features like actor names or releasing years may not have much importance in the recommendations.
+
+# When deciding between user-based and item-based collaborative filtering, you can consider the number of items and users in your system.
+
+User-Based Collaborative Filtering: If the number of items is greater than the number of users, it's more efficient to use user-based collaborative filtering. This approach reduces computational power by focusing on similarities between users rather than comparing a large number of items.
+
+Item-Based Collaborative Filtering: If the number of users is greater than the number of items, it's preferable to use item-based collaborative filtering. This method takes advantage of the larger user base to find similarities in item preferences, as there are fewer items to compare.
+
+For example, Amazon has millions of products available for sale but billions of customers. Therefore, Amazon uses item-based collaborative filtering because the number of products is significantly smaller compared to the number of customers, making it more practical to analyze item similarities.
+
+By considering the ratio of items to users, you can choose the appropriate approach to optimize the performance of your collaborative filtering system.
